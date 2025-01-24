@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h1>Food Dishes</h1>
+    </div>
+    <div class="container">
+        <!-- Food Items -->
+        <div class="menu">
+            <div class="item">
+                <img src="1.jpg" alt="Samosa">
+                <h3>Samosa</h3>
+                <p class="amount">30</p>
+                <button onclick="addToCart('Samosa', 30)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="2.jpg" alt="Sandwich">
+                <h3>Sandwich</h3>
+                <p class="amount">40</p>
+                <button onclick="addToCart('Sandwich', 40)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="3.png" alt="Pizza">
+                <h3>Pizza</h3>
+                <p class="amount">100</p>
+                <button onclick="addToCart('Pizza', 100)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="4.jpg" alt="Dosa">
+                <h3>Dosa</h3>
+                <p class="amount">70</p>
+                <button onclick="addToCart('Dosa', 70)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="5.jpg" alt="Vada Pav">
+                <h3>Vada Pav</h3>
+                <p class="amount">25</p>
+                <button onclick="addToCart('Vada Pav', 25)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="6.jpg" alt="Frankie">
+                <h3>Frankie</h3>
+                <p class="amount">50</p>
+                <button onclick="addToCart('Frankie', 50)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="7.jpg" alt="Chinese Roll">
+                <h3>Chinese Roll</h3>
+                <p class="amount">30</p>
+                <button onclick="addToCart('Chinese Roll', 30)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="8.jpg" alt="French Fries">
+                <h3>French Fries</h3>
+                <p class="amount">30</p>
+                <button onclick="addToCart('French Fries', 30)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="9.jpg" alt="Maggie">
+                <h3>Maggie</h3>
+                <p class="amount">30</p>
+                <button onclick="addToCart('Maggie', 30)">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="10.webp" alt="puff">
+              <h3>dahipuri</h3>
+              <p class="amount">40</p>
+              <button onclick="addToCart('puff',20 )">Add to Cart</button>
+          </div>
+          <div class="item">
+            <img src="11.jpg" alt="panipuri">
+            <h3>panipuri</h3>
+            <p class="amount">30</p>
+            <button onclick="addToCart('panipuri', 30)">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="12.jpg" alt="dabeli">
+          <h3>dabeli</h3>
+          <p class="amount">20</p>
+          <button onclick="addToCart('Dabeli',20 )">Add to cart</button>
+      </div>
+        </div>
+        <!-- Cart Section -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: $<span id="total-price">0.00</span></p>
+            <button onclick="confirmOrder()">Confirm Order</button>
+        </div>
+    </div>
+</body>
+</html>
